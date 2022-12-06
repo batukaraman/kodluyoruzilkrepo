@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Batuhan Karaman | Grafik Tasarım Örnekleri</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.flipster.min.js"></script>
+    <script type="text/javascript" src="js/siparisver.js"></script>
+	<script type="text/javascript" src="js/dropmenu.js"></script>
+	<script type="text/javascript" src="js/return.js"></script>
+	<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/active.js"></script>
+
+	<link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.flipster.min.css">
+</head>
+<body>
+	<div>
+		<div class="header">
+			<div class="head-bottom">
+				<a href="index.html"><span>BATUHAN KARAMAN</span></a>
+				<div class="menu" >
+					<a href="iletisim.html">İLETİŞİM</a>
+					<a href="siparis-ver.html">SİPARİŞ VER</a>
+					<a href="index.html" onclick="smoothScroll(document.getElementById('hakkimda'))">HAKKIMDA</a>
+					<span id="ornekler">ÖRNEKLER <i class="fas fa-sort-down"></i></span>
+					<div id="down" >
+						<a href="grafik-tasarim-ornekleri.html" class="active">Grafik Tasarım</a>
+						<a href="web-tasarim-ornekleri.html">Web Tasarım</a>
+					</div>
+					<a href="index.html">ANA SAYFA</a>
+				</div>
+			</div>
+		</div>
+		<div class="warp" style="padding:100px 0 0 0;">
+			<div class="container">
+				<h1 align="center">Grafik Tasarım Örnekleri</h1>
+				<hr width="300" style="margin-left: 350px">
+				<article id="demo-default" class="demo">
+				    <div id="coverflow">
+				        <ul class="flip-items">
+				            <li data-flip-title="Red">
+				                <h2 style="text-align: center;">Logo Tasarım</h2>
+				                <img src="ornekler/1.jpg">
+				            </li>
+				            <li data-flip-title="Razzmatazz" data-flip-category="Purples">
+				                <h2 style="text-align: center;">Afiş Tasarım</h2>
+				                <img src="ornekler/2.jpg" width="250px">
+				             </li>
+				            <li data-flip-title="Deep Lilac" data-flip-category="Purples">
+				            	<h2 style="text-align: center;">Logo Tasarım</h2>
+				                <img src="ornekler/3.jpg">
+				            </li>
+				            <li data-flip-title="Daisy Bush" data-flip-category="Purples">
+				            	<h2 style="text-align: center;">Afiş Tasarım</h2>
+				                <img src="ornekler/4.jpg" width="250px">
+				            </li>
+				            <li data-flip-title="Cerulean Blue" data-flip-category="Blues">
+				            	<h2 style="text-align: center;">Kartvizit Tasarım</h2>
+				                <img src="ornekler/5.jpg">
+				            </li>
+				        </ul>
+				    </div>
+					<script>
+				        var coverflow = $("#coverflow").flipster();
+				    </script>
+				</article>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="footer">
+		<span>Copyright © <span id="demo"></span> <a href="index.html">Batuhan Karaman</a> Tüm hakları saklıdır</span>
+		<script type="text/javascript">
+			var d = new Date();
+			document.getElementById("demo").innerHTML = d.getFullYear();
+		</script>
+	</div>
+
+</body>
+</html>
